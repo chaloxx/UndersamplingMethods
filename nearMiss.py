@@ -32,6 +32,7 @@ undersample = NearMiss(version=1, n_neighbors=3)
 X, y = undersample.fit_resample(X, y)
 # summarize the new class distribution
 counter = Counter(y)
+print(counter)
 # scatter plot of examples by class label
 for label, _ in counter.items():
 	row_ix = where(y == label)[0]
@@ -48,6 +49,7 @@ undersample = NearMiss(version=1, n_neighbors=2)
 X, y = undersample.fit_resample(X, y)
 # summarize the new class distribution
 counter = Counter(y)
+print(counter)
 # scatter plot of examples by class label
 for label, _ in counter.items():
 	row_ix = where(y == label)[0]
@@ -60,4 +62,4 @@ pyplot.legend()
 
 
 
-pyplot.show()
+#pyplot.show()
