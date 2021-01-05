@@ -62,4 +62,4 @@ pyplot.legend()
 
 
 
-#pyplot.show()
+pyplot.show()
